@@ -57,6 +57,14 @@ section.about .about-me {
     grid-column: 2/9;
 }
 
+section.about h5{
+    font-weight: 400;
+    font-family: 'Bebas Neue', normal;
+    font-size: 24px;
+    grid-column: 2 / 7;
+    color: var(--grey2);
+    
+}
 
 
 .headline {
@@ -64,9 +72,24 @@ section.about .about-me {
     font-family: 'Baloo 2', normal;
     font-size: 24px;
     grid-column: 2 / 7;
-    color: var(--light-orange);
+    color: var(--grey2);
 }
 
+.headline h1{
+    font-weight: 500;
+    font-family: 'Baloo 2', normal;
+    font-size: 64px;
+    grid-column: 2 / 7;
+    color: var(--grey2);
+}
+
+.headline #web{
+    font-weight: 800;
+    font-family: 'Baloo 2', 'normal';
+    font-size: 24px;
+    grid-column: 2 / 7;
+    color: var(--grey);
+}
 
 footer{
     position: fixed;
