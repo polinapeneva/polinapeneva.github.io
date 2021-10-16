@@ -61,27 +61,12 @@ section.about .about-me {
 
 .headline {
     font-weight: 400;
-    font-family: 'Baloo 2', cursive;
-    font-size: 64px;
+    font-family: 'Baloo 2', normal;
+    font-size: 24px;
     grid-column: 2 / 7;
     color: var(--light-orange);
 }
 
-.headline #design {
-    color: var(--blue);
-}
-
-.headline #paint {
-    color: var(--orange);
-}
-
-.headline #ampersand {
-    color: var(--pink);
-}
-
-.headline #photos {
-    color: var(--turquoise);
-}
 
 footer{
     position: fixed;
