@@ -1,0 +1,13 @@
+body {
+    margin: 0;
+    padding: 0 120px;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+    background-color: #181A1B;
+}
+
+header, main, footer {
+    column-span: all;
+}
