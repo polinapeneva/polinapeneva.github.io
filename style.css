@@ -26,6 +26,48 @@ header, main, footer {
     grid-column: 1 / 12;
 }
 
+
+
 h1.headline {
     grid-column: 2 / 7;
+}
+
+header{
+    position: absolute;
+    width: 1920px;
+    height: 189px;
+    left: 0px;
+    top: 12px;
+
+/* Dark Blue/BG Color */
+
+background: #181A1B;
+}
+.topnav{
+    position: absolute;
+    width: 357px;
+    height: 29px;
+    left: 1443px;
+    top: 92px;
+    
+}
+a{
+    /* display: flex;
+    justify-content: space-between; */
+    width: 71px;
+    height: 29px;
+    left: 1587px;
+    top: 92px;
+
+font-family: Bebas Neue;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 29px;
+/* identical to box height */
+
+
+/* Light orange */
+
+color: #F9F6F3;
 }
