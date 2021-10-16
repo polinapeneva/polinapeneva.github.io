@@ -1,3 +1,17 @@
+:root {
+    --dark-brown-bg-color: #181A1B;
+    --dark-brown: #524947;
+    --light-brown: #797270;
+    --oragne: #F3D3BD;
+    --pink: #BF98A0;
+    --blue: #97C8EB;
+    --turquoise:#7ED0DC;
+    --white: #FFFFFF;
+    --light-orange: #F9F6F3;
+    --grey: #EBE9E8;
+    --grey2: #A8A3A3;
+}
+
 body {
     margin: 0;
     padding: 0 120px;
@@ -5,9 +19,13 @@ body {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 20px;
-    background-color: #181A1B;
+    background-color: var(--dark-brown-bg-color);
 }
 
 header, main, footer {
-    column-span: all;
+    grid-column: 1 / 12;
+}
+
+h1.headline {
+    grid-column: 2 / 7;
 }
