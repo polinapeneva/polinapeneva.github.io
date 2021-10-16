@@ -46,51 +46,40 @@ nav a{
     font-family: 'Bebas Neue', cursive;
 }
 
-section.hero {
+section.about {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 20px;
     
 }
 
-section.hero .intro {
-    grid-column: 2/8;
-}
-
-section.hero .photo-container {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    grid-column: 8/12;
-    height: 485px;
-}
-
-img.elipse, img.poli {
-    position: absolute;
+section.about .about-me {
+    grid-column: 2/9;
 }
 
 
-h1.headline {
-    font-weight: 500;
+
+.headline {
+    font-weight: 400;
     font-family: 'Baloo 2', cursive;
     font-size: 64px;
     grid-column: 2 / 7;
     color: var(--light-orange);
 }
 
-h1.headline #design {
+.headline #design {
     color: var(--blue);
 }
 
-h1.headline #paint {
+.headline #paint {
     color: var(--orange);
 }
 
-h1.headline #ampersand {
+.headline #ampersand {
     color: var(--pink);
 }
 
-h1.headline #photos {
+.headline #photos {
     color: var(--turquoise);
 }
 
