@@ -18,12 +18,27 @@ body {
     margin: 0;
     padding: 0 120px;
     min-height: 100vh;
-
     background-color: var(--dark-brown-bg-color);
 }
 
-header, main, footer {
-    /* pass */
+header {
+    margin-top: 4em;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav {
+    width: 360px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+nav a{
+    text-decoration: none;
+    font-size: 24px;
+    color: var(--white);
+    font-family: 'Bebas Neue', cursive;
 }
 
 section.hero {
@@ -32,22 +47,21 @@ section.hero {
     gap: 20px;
 }
 
-.intro {
+section.hero .intro {
     grid-column: 2/8;
 }
 
-.photo-container {
+section.hero .photo-container {
     grid-column: 8/12;
     height: 485px;
     background-color: red;
 }
 
-
-
 h1.headline {
     font-weight: 500;
     font-family: 'Baloo 2', cursive;
     font-size: 64px;
+    grid-column: 2 / 7;
     color: var(--light-orange);
 }
 
