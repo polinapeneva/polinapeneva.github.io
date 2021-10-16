@@ -2,7 +2,7 @@
     --dark-brown-bg-color: #181A1B;
     --dark-brown: #524947;
     --light-brown: #797270;
-    --oragne: #F3D3BD;
+    --orange: #F3D3BD;
     --pink: #BF98A0;
     --blue: #97C8EB;
     --turquoise:#7ED0DC;
@@ -27,5 +27,31 @@ header, main, footer {
 }
 
 h1.headline {
-    grid-column: 2 / 7;
+    grid-column: 2 / 7 !important;
+    font-weight: 500;
+    font-family: 'Baloo 2', cursive;
+    font-size: 64px;
+    color: var(--light-orange);
+}
+
+h1.headline #design {
+    color: var(--blue);
+}
+
+h1.headline #paint {
+    color: var(--orange);
+}
+
+h1.headline #ampersand {
+    color: var(--pink);
+}
+
+h1.headline #photos {
+    color: var(--turquoise);
+}
+
+section.hero .photo-container{
+    grid-column: 8/11;
+    background-color: red;
+    height: 100px;
 }
