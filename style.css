@@ -1,4 +1,6 @@
+
 :root {
+    /* colors */
     --dark-brown-bg-color: #181A1B;
     --dark-brown: #524947;
     --light-brown: #797270;
@@ -16,18 +18,33 @@ body {
     margin: 0;
     padding: 0 120px;
     min-height: 100vh;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    gap: 20px;
+
     background-color: var(--dark-brown-bg-color);
 }
 
 header, main, footer {
-    grid-column: 1 / 12;
+    /* pass */
 }
 
+section.hero {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+}
+
+.intro {
+    grid-column: 2/8;
+}
+
+.photo-container {
+    grid-column: 8/12;
+    height: 485px;
+    background-color: red;
+}
+
+
+
 h1.headline {
-    grid-column: 2 / 7 !important;
     font-weight: 500;
     font-family: 'Baloo 2', cursive;
     font-size: 64px;
@@ -48,10 +65,4 @@ h1.headline #ampersand {
 
 h1.headline #photos {
     color: var(--turquoise);
-}
-
-section.hero .photo-container{
-    grid-column: 8/11;
-    background-color: red;
-    height: 100px;
 }
