@@ -116,6 +116,12 @@ footer{
     width: 100%;
    
     display: flex;
-    padding: 0 120px;
     background: #F3D3BD;
+
+    justify-content: space-between;
+}
+
+.social-network-icons{
+    position: fixed;
+    justify-content: space-between;
 }
