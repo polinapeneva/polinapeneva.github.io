@@ -51,6 +51,7 @@ background: #181A1B;
     top: 92px;
     
 }
+
 a{
     /* display: flex;
     justify-content: space-between; */
@@ -59,17 +60,17 @@ a{
     left: 1587px;
     top: 92px;
 
-font-family: Bebas Neue;
-font-style: normal;
-font-weight: normal;
-font-size: 24px;
-line-height: 29px;
-/* identical to box height */
+    font-family: Bebas Neue;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 29px;
+    /* identical to box height */
 
 
 /* Light orange */
 
-color: #F9F6F3;
+    color: #F9F6F3;
     grid-column: 2 / 7 !important;
     font-weight: 500;
     font-family: 'Baloo 2', cursive;
