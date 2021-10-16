@@ -52,6 +52,14 @@ background: #181A1B;
     
 }
 
+.logo{
+    position: absolute;
+    width: 94px;
+    height: 94px;
+    left: 120px;
+    top: 60px;
+}
+
 a{
     /* display: flex;
     justify-content: space-between; */
