@@ -40,7 +40,15 @@ nav {
     display: flex;
     justify-content: space-between;
 }
-
+.about-active {
+    background-image: linear-gradient(45deg, #97C8EB, #F3D3BD);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+  }
 
 nav a{
     text-decoration: none;
@@ -153,3 +161,5 @@ footer p{
     display: flex;
     align-items: center;
 }
+
+
