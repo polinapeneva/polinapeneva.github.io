@@ -23,6 +23,7 @@ body {
     padding: 0 120px;
     min-height: 100vh;
     background-color: var(--dark-brown-bg-color);
+    
 }
 
 header {
@@ -50,7 +51,7 @@ section.about {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 20px;
-    
+    background-image: url('images/about-logo.png');
 }
 
 section.about .about-me {
@@ -127,3 +128,9 @@ footer{
     position: fixed;
     justify-content: space-between;
 }
+
+/* must be fixed */
+/* .background-image-logo{
+    grid-column: 8/12;
+    position: absolute;
+} */
