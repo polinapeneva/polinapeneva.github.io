@@ -90,6 +90,26 @@ section.about h5{
     grid-column: 2 / 7;
     color: var(--grey);
 }
+.headline #web-link{
+    font-weight: 800;
+    font-family: 'Baloo 2', 'normal';
+    font-size: 24px;
+    grid-column: 2 / 7;
+    color: var(--grey);
+}
+
+.headline #web-link a:visited{
+    color: var(--blue);
+    
+  }
+  .headline #web-link a:link{
+    color: var(--blue);
+  }
+
+  .headline #web-link a:hover{
+    color:var(--dark-blue);
+  }
+
 
 footer{
     position: fixed;

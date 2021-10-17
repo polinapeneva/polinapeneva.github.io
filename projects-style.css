@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    /* colors */
+    --dark-brown-bg-color: #181A1B;
+    --dark-brown: #524947;
+    --light-brown: #797270;
+    --orange: #F3D3BD;
+    --pink: #BF98A0;
+    --blue: #97C8EB;
+    --turquoise:#7ED0DC;
+    --white: #FFFFFF;
+    --light-orange: #F9F6F3;
+    --grey: #EBE9E8;
+    --grey2: #A8A3A3;
+    --dark-blue: #7AABCE;
+    --gradient-vertical2: linear-gradient(180deg, #F3D3BD 0%, #97C8EB 100%);
+    --vertical-gradient: linear-gradient(0deg, #F3D3BD 0%, #97C8EB 100%);
+    --brand-gradient: linear-gradient(270deg, #F3D3BD 0%, #97C8EB 100%);
+}
+
+body {
+    margin: 0;
+    padding: 0 120px;
+    min-height: 100vh;
+    background-color: var(--dark-brown-bg-color);
+}
+
+header {
+    padding: 2em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    width: 360px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+nav a{
+    text-decoration: none;
+    font-size: 24px;
+    color: var(--white);
+    font-family: 'Bebas Neue', cursive;
+}
+
+section.hero {
+    margin-top:  2em;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+}
+
+section.hero .intro {
+    grid-column: 2/8;
+}
+
+section.hero .photo-container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    grid-column: 8/12;
+    height: 485px;
+}
+
+img.elipse, img.poli {
+    position: absolute;
+}
+
+img.elipse {
+    width: 85%;
+    z-index: 1;
+}
+
+img.poli {
+    width: 75%;
+}
+
+img.poli {
+    right: 0;
+}
+
+
+h1.headline {
+    font-weight: 500;
+    font-family: 'Baloo 2', cursive;
+    font-size: 64px;
+    grid-column: 2 / 7;
+    color: var(--light-orange);
+}
+
+h1.headline #design {
+    color: var(--blue);
+}
+
+h1.headline #paint {
+    color: var(--orange);
+}
+
+h1.headline #ampersand {
+    color: var(--pink);
+}
+
+h1.headline #photos {
+    color: var(--turquoise);
+}
+
+section.hero ul.skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    width: 60%;
+    color: var(--grey2);
+    font-size: 24px;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    list-style-type: none;
+}
+
+section.hero ul.skills {
+    position: relative;
+}
+
+section.hero ul.skills .circle {
+    position: absolute;
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    background-color: var(--dark-brown);
+    opacity: 0.3;
+}
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: grid;
+    background: #F3D3BD;
+    padding: 0 120px;
+}
+
+
+footer .container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    grid-column: 1/12;
+}
+
+.social-network-icons{
+    grid-column: 10/12;
+}
+
+.email-logo:hover{
+    background: url("/images/email-hover.png") no-repeat;
+}
+.instagram-logo:hover{
+    background: url("/images/instagram-hover.png") no-repeat;
+}
+.behance-logo:hover{
+    background: url("/images/behance-hover.png") no-repeat;
+}
+.linkedin-logo:hover{
+    background: url("/images/linkedin-hover.png") no-repeat;
+}
+
+
+/* CONTACT*/
+
+section.contact{
+    width: 100vw;
+}
+
+.contact-containters {
+    margin-top:  2em;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+    background-color: var(--orange);
+}
+
+.left-containter{
+    grid-column: 2/5;
+}
+.right-containter{
+    grid-column: 7/11;
+}
+
+h1.welcome {
+    font-weight: 500;
+    font-family: 'Baloo 2', cursive;
+    font-size: 64px;
+    grid-column: 2 / 9;
+    color: var(--dark-brown-bg-color);
+}
+
+p.contact-message{
+    font-family: 'Baloo 2', normal;
+    font-size: 24px;
+}
+
+h1.social-media-link {
+    font-weight: 400;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 64px;
+    grid-column: 2/9;
+    color: var(--blue);
+    text-decoration: none;
+}
+
+h1.social-media-link a:visited {
+    color: var(--blue);
+    
+  }
+  h1.social-media-link a:link {
+    color: var(--blue);
+  }
+
+  h1.social-media-link a:hover {
+    color:var(--dark-blue);
+  }
+
+  .contact-form .right-containter {
+    grid-column: 7 / 9;
+}
