@@ -1,4 +1,7 @@
-
+* {
+    margin: 0;
+    padding: 0;
+}
 :root {
     /* colors */
     --dark-brown-bg-color: #181A1B;
@@ -23,11 +26,10 @@ body {
     padding: 0 120px;
     min-height: 100vh;
     background-color: var(--dark-brown-bg-color);
-    
 }
 
 header {
-    margin-top: 4em;
+    padding: 2em 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -38,7 +40,15 @@ nav {
     display: flex;
     justify-content: space-between;
 }
-
+.about-active {
+    background-image: linear-gradient(45deg, #97C8EB, #F3D3BD);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+  }
 
 nav a{
     text-decoration: none;
@@ -46,6 +56,7 @@ nav a{
     color: var(--white);
     font-family: 'Bebas Neue', cursive;
 }
+
 
 section.about {
     display: grid;
@@ -63,8 +74,14 @@ section.about h5{
     font-family: 'Bebas Neue', normal;
     font-size: 24px;
     grid-column: 2 / 7;
-    color: var(--grey2);
-    
+
+    background-image: linear-gradient(45deg, #97C8EB, #F3D3BD);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
 }
 
 
@@ -81,7 +98,14 @@ section.about h5{
     font-family: 'Baloo 2', normal;
     font-size: 64px;
     grid-column: 2 / 7;
-    color: var(--grey2);
+    
+    background-image: linear-gradient(45deg, #97C8EB, #F3D3BD);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
 }
 
 .headline #web{
@@ -112,25 +136,30 @@ section.about h5{
   }
 
 
+
+/* FOOTER */
 footer{
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
-   
-    display: flex;
+    display: grid;
     background: #F3D3BD;
-
-    justify-content: space-between;
+    padding: 0 120px;
 }
 
-.social-network-icons{
-    position: fixed;
+
+footer .container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
+    grid-column: 1/12;
 }
 
-/* must be fixed */
-/* .background-image-logo{
-    grid-column: 8/12;
-    position: absolute;
-} */
+footer p{
+    display: flex;
+    align-items: center;
+}
+
+

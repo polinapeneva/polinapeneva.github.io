@@ -136,24 +136,6 @@ section.hero ul.skills .circle {
     opacity: 0.3;
 }
 
-footer{
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    display: grid;
-    background: #F3D3BD;
-    padding: 0 120px;
-}
-
-
-footer .container {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    grid-column: 1/12;
-}
 
 .social-network-icons{
     grid-column: 10/12;
@@ -230,4 +212,30 @@ h1.social-media-link a:visited {
 
   .contact-form .right-containter {
     grid-column: 7 / 9;
+}
+
+
+/* FOOTER */
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: grid;
+    background: #F3D3BD;
+    padding: 0 120px;
+}
+
+
+footer .container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    grid-column: 1/12;
+}
+
+footer p{
+    display: flex;
+    align-items: center;
 }
