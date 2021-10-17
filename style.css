@@ -15,7 +15,7 @@
     --light-orange: #F9F6F3;
     --grey: #EBE9E8;
     --grey2: #A8A3A3;
-
+    --dark-blue: #7AABCE;
     --gradient-vertical2: linear-gradient(180deg, #F3D3BD 0%, #97C8EB 100%);
     --vertical-gradient: linear-gradient(0deg, #F3D3BD 0%, #97C8EB 100%);
     --brand-gradient: linear-gradient(270deg, #F3D3BD 0%, #97C8EB 100%);
@@ -157,5 +157,66 @@ footer .container {
 .social-network-icons{
     padding-left: 120px;
     position: fixed;
-    /* justify-content: space-between; */
+}
+
+.email-logo:hover{
+    background: url("/images/email-hover.png") no-repeat;
+}
+.instagram-logo:hover{
+    background: url("/images/instagram-hover.png") no-repeat;
+}
+.behance-logo:hover{
+    background: url("/images/behance-hover.png") no-repeat;
+}
+.linkedin-logo:hover{
+    background: url("/images/linkedin-hover.png") no-repeat;
+}
+
+
+/* CONTACT*/
+section.contact {
+    margin-top:  2em;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+    background-color: var(--orange);
+   
+}
+
+h1.welcome {
+    font-weight: 500;
+    font-family: 'Baloo 2', cursive;
+    font-size: 64px;
+    grid-column: 2 / 9;
+    color: var(--dark-brown-bg-color);
+}
+
+p.contact-message{
+    font-family: 'Baloo 2', normal;
+    font-size: 24px;
+}
+
+h1.social-media-link {
+    font-weight: 400;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 64px;
+    grid-column: 2 / 9;
+    color: var(--blue);
+    text-decoration: none;
+}
+
+h1.social-media-link a:visited {
+    color: var(--blue);
+    
+  }
+  h1.social-media-link a:link {
+    color: var(--blue);
+  }
+
+  h1.social-media-link a:hover {
+    color:var(--dark-blue);
+  }
+
+  .contact-form .right-containter {
+    grid-column: 7 / 9;
 }
