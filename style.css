@@ -141,7 +141,7 @@ footer{
     left: 0;
     bottom: 0;
     width: 100%;
-   
+    display: grid;
     background: #F3D3BD;
     padding: 0 120px;
 }
@@ -152,11 +152,11 @@ footer .container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    grid-column: 1/12;
 }
 
 .social-network-icons{
-    padding-left: 120px;
-    position: fixed;
+    grid-column: 10/12;
 }
 
 .email-logo:hover{
@@ -174,13 +174,24 @@ footer .container {
 
 
 /* CONTACT*/
-section.contact {
+
+section.contact{
+    width: 100vw;
+}
+
+.contact-containters {
     margin-top:  2em;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 20px;
     background-color: var(--orange);
-   
+}
+
+.left-containter{
+    grid-column: 2/5;
+}
+.right-containter{
+    grid-column: 7/11;
 }
 
 h1.welcome {
@@ -200,7 +211,7 @@ h1.social-media-link {
     font-weight: 400;
     font-family: 'Bebas Neue', cursive;
     font-size: 64px;
-    grid-column: 2 / 9;
+    grid-column: 2/9;
     color: var(--blue);
     text-decoration: none;
 }
