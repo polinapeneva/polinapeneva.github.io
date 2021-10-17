@@ -66,7 +66,9 @@ section.about h5{
     font-family: 'Bebas Neue', normal;
     font-size: 24px;
     grid-column: 2 / 7;
-    color: var(--grey2);
+    background: -webkit-linear-gradient(#F3D3BD, #97C8EB);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     
 }
 
@@ -84,7 +86,9 @@ section.about h5{
     font-family: 'Baloo 2', normal;
     font-size: 64px;
     grid-column: 2 / 7;
-    color: var(--grey2);
+    background: -webkit-linear-gradient(#F3D3BD, #97C8EB);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .headline #web{
