@@ -299,3 +299,8 @@ footer .container {
     justify-content: space-between;
     grid-column: 1/12;
 }
+
+footer p{
+    display: flex;
+    align-items: center;
+}
