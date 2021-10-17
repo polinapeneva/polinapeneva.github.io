@@ -66,10 +66,14 @@ section.about h5{
     font-family: 'Bebas Neue', normal;
     font-size: 24px;
     grid-column: 2 / 7;
-    background: -webkit-linear-gradient(#F3D3BD, #97C8EB);
+
+    background-image: linear-gradient(45deg, #97C8EB, #F3D3BD);
+    background-size: 100%;
+    background-repeat: repeat;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
 }
 
 
@@ -86,9 +90,14 @@ section.about h5{
     font-family: 'Baloo 2', normal;
     font-size: 64px;
     grid-column: 2 / 7;
-    background: -webkit-linear-gradient(#F3D3BD, #97C8EB);
+    
+    background-image: linear-gradient(45deg, #97C8EB, #F3D3BD);
+    background-size: 100%;
+    background-repeat: repeat;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
 }
 
 .headline #web{
