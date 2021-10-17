@@ -127,3 +127,8 @@ footer{
     position: fixed;
     justify-content: space-between;
 }
+
+/* must be fixed */
+/* .background-image-logo{
+    grid-column: 8/12;
+} */
