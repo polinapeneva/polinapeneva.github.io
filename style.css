@@ -15,6 +15,7 @@
     --light-orange: #F9F6F3;
     --grey: #EBE9E8;
     --grey2: #A8A3A3;
+    --grey3: #36393A;
     --dark-blue: #7AABCE;
     --gradient-vertical2: linear-gradient(180deg, #F3D3BD 0%, #97C8EB 100%);
     --vertical-gradient: linear-gradient(0deg, #F3D3BD 0%, #97C8EB 100%);
@@ -23,13 +24,13 @@
 
 body {
     margin: 0;
-    padding: 0 120px;
     min-height: 100vh;
     background-color: var(--dark-brown-bg-color);
+    overflow-x: hidden;
 }
 
 header {
-    padding: 2em 0;
+    padding: 2em 120px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -51,7 +52,7 @@ nav a{
 
 section.hero {
     margin-top:  2em;
-
+    padding: 0 120px;
     /* grid */
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -153,15 +154,15 @@ section.hero ul.skills p {
 
 /* ======================== ABOUT SECTION ======================== */
 section.about {
-    color: white;
     /* grid */
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 20px;
-    padding: 10% 0;
+    padding: 10% 120px;
 }
 
-section.about h2{
+h2{
+    color: white;
     grid-column: 2/12;
     display: flex;
     align-items: center;
@@ -175,15 +176,19 @@ section.about h2{
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-section.about h2 .circle{ 
+h2 .circle{ 
     height: 55px;
     width: 55px;
     grid-column: 2/12;
-    background-color: var(--blue);
+    background-image: var(--vertical-gradient);
     border-radius: 50%;
 }
 
-section.about h2 .text{
+h2 .text:hover ~ section.about h2 .circle{ 
+    display: none;
+}
+
+h2 .text{
     position: absolute;
     left: 25px;
 }
@@ -201,6 +206,61 @@ section.about p{
     color: var(--grey2);
 }
 
+/* ======================== PROJECTS ======================== */
+section.projects {
+    /* grid */
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+    padding: 10% 120px;
+    background-color: var(--grey3);
+}
+
+section.projects .row{
+    display: flex;
+    justify-content: space-between;
+    grid-column: 3/12;
+    max-width: 1200px;
+    margin: 1em 0;
+}
+
+section.projects .row .project{
+    width: 270px;
+    height: 270px;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+section.projects .label{
+    position: relative;
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 43px;
+    letter-spacing: 0em;
+    text-align: left;
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+}
+
+section.projects .label p{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+   transform: rotate(90deg);
+}
+
+
+
+section.projects .row .project{
+    width: 270px;
+    height: 270px;
+    overflow: hidden;
+}
 
 .social-network-icons{
     grid-column: 10/12;
@@ -237,6 +297,7 @@ section.contact{
 .left-containter{
     grid-column: 2/5;
 }
+
 .right-containter{
     grid-column: 7/11;
 }
