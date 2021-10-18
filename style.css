@@ -251,14 +251,52 @@ section.projects .label{
 section.projects .label img{
     display: block;
 }
+section.project .row .project img{
+    width: 328px;
+    height: 328px;
+    object-fit: contain;
+    
+}
 
 
 section.projects .row .project{
     width: 270px;
     height: 270px;
     overflow: hidden;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+/* Here Image starts */
+
+section.projects .row .project:hover{
+    -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
 }
 
+.project:hover .overlay-image {
+    opacity: 1;
+  }
+
+  * {box-sizing: border-box;}
+
+  .overlay-image {
+    position: absolute; 
+    bottom: 0; 
+    background: var(--dark-brown-bg-color);
+    background: rgba(0, 0, 0, 0.9); /* Black see-through */
+    color: #f1f1f1; 
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 24px;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Bebas Neue', normal;
+  }
+  
+
+/* here ends */
 .social-network-icons{
     grid-column: 10/12;
 }
