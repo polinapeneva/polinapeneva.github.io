@@ -282,17 +282,18 @@ section.projects .row .project:hover{
   .overlay-image {
     position: absolute; 
     bottom: 0; 
-    background: var(--dark-brown-bg-color);
-    background: rgba(0, 0, 0, 0.9); /* Black see-through */
+    background: #181A1B;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.35);
     color: #f1f1f1; 
     width: 100%;
     transition: .5s ease;
     opacity:0;
     color: white;
     font-size: 24px;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
     font-family: 'Bebas Neue', normal;
+    border-radius: 0px 0px 24px 24px;
   }
   
 
