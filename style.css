@@ -425,3 +425,7 @@ footer p{
     display: flex;
     align-items: center;
 }
+
+#jump-contact{
+    scroll-behavior: smooth;
+}
