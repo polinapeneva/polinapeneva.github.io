@@ -6,6 +6,7 @@
     /* colors */
     --dark-brown-bg-color: #181A1B;
     --dark-brown: #524947;
+    --dark-blue: #7AABCE;
     --dark-blue-bg-color: #181A1B;
     --light-brown: #797270;
     --orange: #F3D3BD;
@@ -28,6 +29,7 @@ body {
     min-height: 100vh;
     background-color: var(--dark-brown-bg-color);
     overflow-x: hidden;
+    font-size: 12px;
 }
 
 header {
@@ -46,14 +48,15 @@ nav {
 
 nav a{
     text-decoration: none;
-    font-size: 24px;
+    font-size: 1.5em;
     color: var(--white);
     font-family: 'Bebas Neue', cursive;
 }
 
 section.hero {
-    margin-top:  2em;
+    margin-top: 6em;
     padding: 0 120px;
+
     /* grid */
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -93,7 +96,7 @@ img.poli {
 
 h1.headline {
     font-family: 'Baloo 2', cursive;
-    font-size: 64px;
+    font-size: 4em;
     font-weight: 500;
     grid-column: 2 / 7;
     color: var(--light-orange);
@@ -123,7 +126,7 @@ section.hero ul.skills {
     width: 70%;
     max-width: 550px;
     color: var(--grey2);
-    font-size: 24px;
+    font-size: 1.5em;
     line-height: 29px;
     margin-left: 10px;
     text-transform: uppercase;
@@ -169,7 +172,7 @@ h2{
     align-items: center;
     position: relative;
     font-family: 'Baloo 2', cursive;
-    font-size: 64px;
+    font-size: 4em;
     font-style: normal;
     font-weight: 500;
     line-height: 101px;
@@ -198,7 +201,7 @@ section.about p{
     grid-column: 2/8;
     max-width: 600px;
     font-family: 'Baloo 2', cursive;
-    font-size: 24px;
+    font-size: 1.5em;
     font-style: normal;
     font-weight: 400;
     line-height: 38px;
@@ -236,7 +239,7 @@ section.projects .label{
     position: relative;
     color: white;
     font-family: 'Bebas Neue', cursive;
-    font-size: 36px;
+    font-size: 2.25em;
     font-style: normal;
     font-weight: 400;
     line-height: 43px;
@@ -290,56 +293,13 @@ section.projects .row .project:hover{
     transition: .5s ease;
     opacity:0;
     color: white;
-    font-size: 24px;
+    font-size: 1.5em;
     padding: 10px;
     text-align: center;
     font-family: 'Bebas Neue', normal;
     border-radius: 0px 0px 24px 24px;
   }
   
-
-/* Project hover end */
-.social-network-icons{
-    grid-column: 10/12;
-}
-
-.instagram-logo{
-    width: 57px;
-    height: 57px;
-}
-.linkedin-logo{
-    width: 57px;
-    height: 57px;
-}
-.behance-logo{
-    width: 57px;
-    height: 57px;
-}
-.email-logo{
-    width: 57px;
-    height: 57px;
-}
-
-.email-logo:hover{
-    background: url("/images/email-hover.png") no-repeat;
-    width: 57px;
-    height: 57px;
-}
-.instagram-logo:hover{
-    background: url("/images/instagram-hover.png") no-repeat;
-    width: 57px;
-    height: 57px;
-}
-.behance-logo:hover{
-    background: url("/images/behance-hover.png") no-repeat;
-    width: 57px;
-    height: 57px;
-}
-.linkedin-logo:hover{
-    background: url("/images/linkedin-hover.png") no-repeat;
-    width: 57px;
-    height: 57px;
-}
 
 
 /* ==================== CONTACT ======================== */
@@ -364,11 +324,9 @@ section.contact .right{
 section.contact p{
     color: #181A1B;
     font-family: 'Baloo 2', cursive;
-    font-size: 24px;
+    font-size: 1.5em;
     font-style: normal;
     font-weight: 500;
-    line-height: 38px;
-    letter-spacing: 0em;
     text-align: left;
 }
 
@@ -378,7 +336,7 @@ section.contact h2{
 section.contact .link{
     font-weight: 400;
     font-family: 'Bebas Neue', cursive;
-    font-size: 48px;
+    font-size: 3em;
     grid-column: 2/9;
     color: var(--blue);
     text-decoration: none;
@@ -404,14 +362,45 @@ section.contact .link:visited {
 
 /* FOOTER */
 footer{
-    padding: 5% 0;
     width: 100%;
     display: grid;
     background: #F3D3BD;
-    padding: 0 120px;
+    padding: 3% 120px;
 }
 
 footer p{
+    font-family: 'Baloo 2', cursive;
+    font-size: 1.5em;
+    font-weight: 500;
     display: flex;
     align-items: center;
+}
+
+
+
+/* Project hover end */
+.social-network-icons{
+    display: flex;
+    justify-content: space-between;
+    grid-column: 10/12;
+}
+
+.social-network-icons .icon-bg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 57px;
+    height: 57px;
+    background-color: var(--light-orange);
+    border-radius: 50%;
+    
+} 
+
+.social-network-icons .icon-bg:hover .icon{
+    stroke: var(--dark-blue);
+}
+
+.social-network-icons .icon-bg:hover .solid{
+    stroke: var(--dark-blue);
+    fill: var(--dark-blue);
 }
