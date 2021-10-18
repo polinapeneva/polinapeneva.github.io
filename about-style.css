@@ -249,24 +249,12 @@ section.about p{
 }
 
 
-/* ==================== FOOTER ======================== */
+/* FOOTER */
 footer{
-    position: fixed;
-    left: 0;
-    bottom: 0;
     width: 100%;
     display: grid;
     background: #F3D3BD;
-    padding: 0 120px;
-}
-
-
-footer .container {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    grid-column: 1/12;
+    padding: 3% 120px;
 }
 
 footer p{
@@ -275,4 +263,33 @@ footer p{
     font-weight: 500;
     display: flex;
     align-items: center;
+}
+
+
+
+/* Project hover end */
+.social-network-icons{
+    display: flex;
+    justify-content: space-between;
+    grid-column: 10/12;
+}
+
+.social-network-icons .icon-bg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 57px;
+    height: 57px;
+    background-color: var(--light-orange);
+    border-radius: 50%;
+    
+} 
+
+.social-network-icons .icon-bg:hover .icon{
+    stroke: var(--dark-blue);
+}
+
+.social-network-icons .icon-bg:hover .solid{
+    stroke: var(--dark-blue);
+    fill: var(--dark-blue);
 }

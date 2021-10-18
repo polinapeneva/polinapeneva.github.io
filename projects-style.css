@@ -58,14 +58,7 @@ nav a{
 
 
 
-/* ======================== ABOUT SECTION ======================== */
-section.about {
-    /* grid */
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    gap: 20px;
-    padding: 10% 120px;
-}
+/* ======================== PROJECTS ======================== */
 
 h2{
     color: white;
@@ -99,20 +92,24 @@ h2 .text{
     left: 25px;
 }
 
-section.about p{
-    grid-column: 2/8;
-    max-width: 600px;
-    font-family: 'Baloo 2', cursive;
-    font-size: 24px;
-    font-style: normal;
+h3{
+    font-family: 'Bebas Neue', normal;
     font-weight: 400;
-    line-height: 38px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: var(--grey2);
+    font-size: 24px;
+
+     background-image: linear-gradient(45deg, #97C8EB, #F3D3BD);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
 }
 
-/* ======================== PROJECTS ======================== */
+.project-sections{
+    grid-column: 1/2;
+}
+
 section.projects {
     /* grid */
     display: grid;
@@ -137,26 +134,8 @@ section.projects .row .project{
     border-radius: 25px;
 }
 
-section.projects .label{
-    position: relative;
-    color: white;
-    font-family: 'Bebas Neue', cursive;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 43px;
-    letter-spacing: 0em;
-    text-align: left;
-    grid-column: 2/3;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* align-items: center; */
-}
 
-section.projects .label img{
-    display: block;
-}
+
 section.project .row .project img{
     width: 328px;
     height: 328px;
@@ -172,6 +151,10 @@ section.projects .row .project{
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
 }
+
+/* .gallery-projects{
+    overflow: scroll;
+} */
 
 /* Project hover start */
 section.projects .row .project:hover{
@@ -192,8 +175,6 @@ section.projects .row .project:hover{
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.35);
     color: #f1f1f1; 
     width: 100%;
-    transition: .5s ease;
-    opacity:0;
     color: white;
     font-size: 24px;
     padding: 10px;
@@ -308,25 +289,45 @@ section.contact .link:visited {
 
 /* FOOTER */
 footer{
-    position: fixed;
-    left: 0;
-    bottom: 0;
     width: 100%;
     display: grid;
     background: #F3D3BD;
-    padding: 0 120px;
-}
-
-
-footer .container {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    grid-column: 1/12;
+    padding: 3% 120px;
 }
 
 footer p{
+    font-family: 'Baloo 2', cursive;
+    font-size: 1.5em;
+    font-weight: 500;
     display: flex;
     align-items: center;
+}
+
+
+
+/* Project hover end */
+.social-network-icons{
+    display: flex;
+    justify-content: space-between;
+    grid-column: 10/12;
+}
+
+.social-network-icons .icon-bg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 57px;
+    height: 57px;
+    background-color: var(--light-orange);
+    border-radius: 50%;
+    
+} 
+
+.social-network-icons .icon-bg:hover .icon{
+    stroke: var(--dark-blue);
+}
+
+.social-network-icons .icon-bg:hover .solid{
+    stroke: var(--dark-blue);
+    fill: var(--dark-blue);
 }
