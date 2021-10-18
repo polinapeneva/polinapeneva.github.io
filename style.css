@@ -64,6 +64,7 @@ nav .item {
 }
 
 nav .item .dot {
+    visibility: hidden;
     width: 16px;
     height: 16px;
     margin-bottom: 1em;
@@ -76,6 +77,9 @@ nav .item.active a{
     color: var(--blue);
 }
 
+nav .item.active .dot{
+    visibility: visible;
+}
 section.hero {
     margin-top: 6em;
     padding: 0 120px;
