@@ -57,6 +57,29 @@ nav a{
     font-family: 'Bebas Neue', cursive;
 }
 
+nav .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav .item .dot {
+    visibility: hidden;
+    width: 16px;
+    height: 16px;
+    margin-bottom: 1em;
+    border-radius: 50%;
+    background: var(--brand-gradient);
+    
+}
+
+nav .item.active a{
+    color: var(--blue);
+}
+
+nav .item.active .dot{
+    visibility: visible;
+}
 section.hero {
     margin-top: 6em;
     padding: 0 120px;
