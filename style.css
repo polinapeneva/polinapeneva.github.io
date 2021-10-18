@@ -263,17 +263,42 @@ section.projects .row .project{
     grid-column: 10/12;
 }
 
+.instagram-logo{
+    width: 57px;
+    height: 57px;
+}
+.linkedin-logo{
+    width: 57px;
+    height: 57px;
+}
+.behance-logo{
+    width: 57px;
+    height: 57px;
+}
+.email-logo{
+    width: 57px;
+    height: 57px;
+}
+
 .email-logo:hover{
     background: url("/images/email-hover.png") no-repeat;
+    width: 57px;
+    height: 57px;
 }
 .instagram-logo:hover{
     background: url("/images/instagram-hover.png") no-repeat;
+    width: 57px;
+    height: 57px;
 }
 .behance-logo:hover{
     background: url("/images/behance-hover.png") no-repeat;
+    width: 57px;
+    height: 57px;
 }
 .linkedin-logo:hover{
     background: url("/images/linkedin-hover.png") no-repeat;
+    width: 57px;
+    height: 57px;
 }
 
 
