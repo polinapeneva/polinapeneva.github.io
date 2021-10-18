@@ -136,11 +136,24 @@ h3{
     overflow: scroll;
     overflow-x: hidden; /* Hide horizontal scrollbar */
     width: 895px;
-height: 1199.04px;
-left: 425px;
-top: 383px;
+    height: 858px;
 }
 
+  
+  /* =================Scrollbar============= */
+  *::-webkit-scrollbar {
+    width: 12px;
+    
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #484B4D;
+    border-radius: 20px;
+    border: 3px solid #282B2C;
+  }
+
+  /* =================Scrollbar-End============= */
+  
 section.projects .row{
     display: flex;
     justify-content: space-between;
