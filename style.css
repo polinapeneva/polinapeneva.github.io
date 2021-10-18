@@ -58,12 +58,16 @@ nav a{
 }
 
 nav .item {
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 nav .item .dot {
     width: 16px;
     height: 16px;
+    margin-bottom: 1em;
+    border-radius: 50%;
     background: var(--brand-gradient);
     
 }
