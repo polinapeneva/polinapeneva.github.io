@@ -6,6 +6,7 @@
     /* colors */
     --dark-brown-bg-color: #181A1B;
     --dark-brown: #524947;
+    --dark-blue-bg-color: #181A1B;
     --light-brown: #797270;
     --orange: #F3D3BD;
     --pink: #BF98A0;
@@ -302,54 +303,52 @@ section.projects .row .project{
 }
 
 
-/* CONTACT*/
+/* ==================== CONTACT ======================== */
 
 section.contact{
     width: 100vw;
-}
-
-.contact-containters {
-    margin-top:  2em;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 20px;
     background-color: var(--light-orange);
+    padding: 10% 120px;
 }
 
-.left-containter{
+section.contact .left{
     grid-column: 2/5;
 }
 
-.right-containter{
+section.contact .right{
     grid-column: 7/11;
 }
 
-h1.welcome {
-    font-weight: 500;
+section.contact p{
+    color: #181A1B;
     font-family: 'Baloo 2', cursive;
-    font-size: 64px;
-    grid-column: 2 / 9;
-    color: var(--dark-brown-bg-color);
-}
-
-p.contact-message{
-    font-family: 'Baloo 2', normal;
     font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: left;
 }
 
-h1.social-media-link {
+section.contact h2{
+    color: #181A1B;
+}
+section.contact .link{
     font-weight: 400;
     font-family: 'Bebas Neue', cursive;
-    font-size: 64px;
+    font-size: 48px;
     grid-column: 2/9;
     color: var(--blue);
     text-decoration: none;
 }
 
-h1.social-media-link a:visited {
-    color: var(--blue);
-    
+section.contact .link:visited {
+    color: var(--blue); 
   }
+
   h1.social-media-link a:link {
     color: var(--blue);
   }
