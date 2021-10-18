@@ -1,79 +1,36 @@
-html {
-    scroll-behavior: smooth;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-}
-
-:root {
-    /* colors */
-    --dark-brown-bg-color: #181A1B;
-    --dark-brown: #524947;
-    --dark-blue-bg-color: #181A1B;
-    --light-brown: #797270;
-    --orange: #F3D3BD;
-    --pink: #BF98A0;
-    --blue: #97C8EB;
-    --turquoise:#7ED0DC;
-    --white: #FFFFFF;
-    --light-orange: #F9F6F3;
-    --grey: #EBE9E8;
-    --grey2: #A8A3A3;
-    --grey3: #36393A;
-    --dark-blue: #7AABCE;
-    --gradient-vertical2: linear-gradient(180deg, #F3D3BD 0%, #97C8EB 100%);
-    --vertical-gradient: linear-gradient(0deg, #F3D3BD 0%, #97C8EB 100%);
-    --brand-gradient: linear-gradient(270deg, #F3D3BD 0%, #97C8EB 100%);
-}
-
-body {
-    margin: 0;
-    min-height: 100vh;
-    background-color: var(--dark-brown-bg-color);
-    overflow-x: hidden;
-}
-
-header {
-    padding: 2em 120px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-nav {
-    width: 360px;
-    display: flex;
-    justify-content: space-between;
-}
-
-
-nav a{
-    text-decoration: none;
-    font-size: 24px;
-    color: var(--white);
-    font-family: 'Bebas Neue', cursive;
-}
-
-/* ==================== ABOUT ======================== */
-
-section.about {
+section.about-page {
+    position: relative;
+    padding: 10% 120px;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 20px;
-    background-image: url('images/about-logo.png');
 }
 
-section.about .about-me {
-    grid-column: 2/9;
+
+.logo-container {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: inherit;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 60%;
+    max-width: 600px;
 }
 
-section.about h5{
+.transperant-logo {
+    max-width:100%;
+}
+
+section.about-page .about-me {
+    grid-column: 2/10;
+}
+
+section.about-page h5{
     font-weight: 400;
     font-family: 'Bebas Neue', normal;
-    font-size: 24px;
-    grid-column: 2 / 7;
+    font-size: 3em;
+    grid-column: 2 / 8;
 
     background-image: linear-gradient(45deg, #97C8EB, #F3D3BD);
     background-size: 100%;
@@ -85,7 +42,7 @@ section.about h5{
 }
 
 
-.headline {
+section.about-page .headline {
     font-weight: 400;
     font-family: 'Baloo 2', normal;
     font-size: 24px;
@@ -93,7 +50,7 @@ section.about h5{
     color: var(--grey2);
 }
 
-.headline h1{
+h1.title {
     font-weight: 500;
     font-family: 'Baloo 2', normal;
     font-size: 64px;
@@ -135,161 +92,3 @@ section.about h5{
     color:var(--dark-blue);
   }
 
-/* ==================== CONTACT ======================== */
-
-section.contact{
-    width: 100vw;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    gap: 20px;
-    background-color: var(--light-orange);
-    padding: 10% 120px;
-}
-
-section.contact .left{
-    grid-column: 2/5;
-}
-
-section.contact .right{
-    grid-column: 7/11;
-}
-
-section.contact p{
-    color: #181A1B;
-    font-family: 'Baloo 2', cursive;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 38px;
-    letter-spacing: 0em;
-    text-align: left;
-}
-
-section.contact h2{
-    color: #181A1B;
-}
-section.contact .link{
-    font-weight: 400;
-    font-family: 'Bebas Neue', cursive;
-    font-size: 48px;
-    grid-column: 2/9;
-    color: var(--blue);
-    text-decoration: none;
-}
-
-section.contact .link:visited {
-    color: var(--blue); 
-  }
-
-  h1.social-media-link a:link {
-    color: var(--blue);
-  }
-
-  h1.social-media-link a:hover {
-    color:var(--dark-blue);
-  }
-
-  .contact-form .right-containter {
-    grid-column: 7 / 9;
-}
-
-
-/* ====================AboutSection================= */
-section.about {
-    /* grid */
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    gap: 20px;
-    padding: 10% 120px;
-}
-
-h2{
-    color: white;
-    grid-column: 2/12;
-    display: flex;
-    align-items: center;
-    position: relative;
-    font-family: 'Baloo 2', cursive;
-    font-size: 64px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 101px;
-    margin: 0.5em 0;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-h2 .circle{ 
-    height: 55px;
-    width: 55px;
-    grid-column: 2/12;
-    background-image: var(--vertical-gradient);
-    border-radius: 50%;
-}
-
-h2 .text:hover ~ section.about h2 .circle{ 
-    display: none;
-}
-
-h2 .text{
-    position: absolute;
-    left: 25px;
-}
-
-section.about p{
-    grid-column: 2/8;
-    max-width: 600px;
-    font-family: 'Baloo 2', cursive;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 38px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: var(--grey2);
-}
-
-
-/* FOOTER */
-footer{
-    width: 100%;
-    display: grid;
-    background: #F3D3BD;
-    padding: 3% 120px;
-}
-
-footer p{
-    font-family: 'Baloo 2', cursive;
-    font-size: 1.5em;
-    font-weight: 500;
-    display: flex;
-    align-items: center;
-}
-
-
-
-/* Project hover end */
-.social-network-icons{
-    display: flex;
-    justify-content: space-between;
-    grid-column: 10/12;
-}
-
-.social-network-icons .icon-bg{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 57px;
-    height: 57px;
-    background-color: var(--light-orange);
-    border-radius: 50%;
-    
-} 
-
-.social-network-icons .icon-bg:hover .icon{
-    stroke: var(--dark-blue);
-}
-
-.social-network-icons .icon-bg:hover .solid{
-    stroke: var(--dark-blue);
-    fill: var(--dark-blue);
-}

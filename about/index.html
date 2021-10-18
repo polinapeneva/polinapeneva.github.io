@@ -11,12 +11,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="about-style.css">
-    <link rel="icon" href="images/logo.ico" type="image">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../about-style.css">
+    <link rel="icon" href="../images/logo.ico" type="image">
 </head>
 <body>
     <header>
-        <a href="index.html"><img class="logo" src="images/logo.png" alt="logo" /></a>
+        <a href="index.html"><img class="logo" src="../images/logo.png" alt="logo" /></a>
         <nav>
             <span class="about-active"><a href="about.html">about</a></span>
             <a href="projects.html">projects</a>
@@ -24,14 +25,11 @@
         </nav>
     </header>
     <main>
-        <!-- must be fixed -->
-        <!-- <div class="background-image-logo" style="background-image: url('images/about-logo.png');"> -->
-        <section class="about">
+       <section class="about-page">
             <h5>I am passionate about expressing ideas in creative ways.</h5>
             <div class="about-me">
                 <div class="headline">
-                    
-                    <h1>Oh, Hello! It's nice to meet you!</h1>
+                    <h1 class="title">Oh, Hello! It's nice to meet you!</h1>
                     <p>My name is Polina and I am 
                         <span id="web">web </span> and  
                         <span id="web">graphic designer</span> and artist. I'm currently 26 years old
@@ -65,9 +63,10 @@
                     </p>
                 </div>
             </div>
-            
+            <div class="logo-container">
+                <img class="transperant-logo" src="../images/about-logo.png" alt="Logo transperant">
+            </div>
         </section>
-        
         <section class="contact">
             <h2 id="jump-contact"><div class="circle"></div><span class="text">Say hi</span></h2>
             <div class="left">
@@ -80,8 +79,6 @@
                 <a class="link" href="source/Polinas_Resume.pdf" target="_blank">RESUME </a>
             </div>
     </section>
-        
-        
     </main>
     <footer>
         <p>Copyright © 2021 Polina Peneva. All rights reserved.</p>
@@ -120,9 +117,6 @@
                 </div>
             </a>
         </div>
-       
       </footer>
-      <script src="scrpt.js"></script>
 </body>
-
 </html>
