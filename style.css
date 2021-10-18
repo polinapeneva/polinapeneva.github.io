@@ -57,6 +57,21 @@ nav a{
     font-family: 'Bebas Neue', cursive;
 }
 
+nav .item {
+
+}
+
+nav .item .dot {
+    width: 16px;
+    height: 16px;
+    background: var(--brand-gradient);
+    
+}
+
+nav .item.active a{
+    color: var(--blue);
+}
+
 section.hero {
     margin-top: 6em;
     padding: 0 120px;
