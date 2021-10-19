@@ -50,6 +50,19 @@ section.about-page .headline {
     color: var(--grey2);
 }
 
+.headline p{
+    margin-top: 2em ;
+    margin-bottom: 2em ;
+}
+
+.headline p{
+    margin-top: 2em ;
+    margin-bottom: 2em ;
+}
+.about-page h5{
+    margin-bottom: 3em;
+}
+
 h1.title {
     font-weight: 500;
     font-family: 'Baloo 2', normal;
