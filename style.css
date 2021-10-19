@@ -55,9 +55,10 @@ nav {
 
 nav a{
     text-decoration: none;
-    font-size: 1.5em;
+    font-size: 2em;
     color: var(--white);
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Bebas Neue', normal;
+    font-weight: 400;
 }
 
 nav .item {
@@ -112,25 +113,26 @@ img.elipse, img.poli {
 
 img.elipse {
     width: 85%;
-    z-index: 1;
+    z-index: 0;
 }
 
 img.poli {
-    width: 75%;
+    width: 85%;
 }
 
 img.poli {
     right: 0;
+    border-radius: 50%;
 }
 
 
 h1.headline {
-    font-family: 'Baloo 2', cursive;
+    font-family: 'Baloo 2', normal;
     font-size: 4em;
     font-weight: 500;
     grid-column: 2 / 7;
     color: var(--light-orange);
-    vertical-align: text-top !important;
+    margin-top: -0.4em;
 }
 
 h1.headline #design {
@@ -161,7 +163,8 @@ section.hero ul.skills {
     margin-top: 10px;
     margin-left: 10px;
     text-transform: uppercase;
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Bebas Neue', normal;
+    font-weight: 400;;
     list-style-type: none;
 }
 
