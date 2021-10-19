@@ -61,6 +61,10 @@ nav a{
     font-weight: 400;
 }
 
+nav a:hover{
+   color: var(--blue);
+}
+
 nav .item {
     display: flex;
     flex-direction: column;

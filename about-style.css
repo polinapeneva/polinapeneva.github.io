@@ -102,6 +102,6 @@ h1.title {
   }
 
   .headline #web-link a:hover{
-    color:var(--dark-blue);
+    color:var(--grey);
   }
 
