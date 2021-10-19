@@ -55,9 +55,10 @@ nav {
 
 nav a{
     text-decoration: none;
-    font-size: 1.5em;
+    font-size: 2em;
     color: var(--white);
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Bebas Neue', normal;
+    font-weight: 400;
 }
 
 nav .item {
@@ -112,11 +113,11 @@ img.elipse, img.poli {
 
 img.elipse {
     width: 85%;
-    z-index: 1;
+    z-index: 0;
 }
 
 img.poli {
-    width: 75%;
+    width: 85%;
 }
 
 img.poli {
