@@ -84,6 +84,13 @@ nav .item.active a{
 nav .item.active .dot{
     visibility: visible;
 }
+
+.item {
+    margin-bottom: 2em;
+    display: flex;
+    align-items: center;
+}
+
 section.hero {
     margin-top: 6em;
     padding: 0 120px;
