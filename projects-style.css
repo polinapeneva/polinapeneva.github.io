@@ -107,6 +107,10 @@ h2 .text{
     height: 858px;
 }
 
+.projects-list img{
+    object-fit: cover;
+}
+
 section.projects-page .projects-list{
     display: flex;
     flex-wrap: wrap;
