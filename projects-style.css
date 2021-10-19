@@ -148,3 +148,17 @@ section.projects-page .project:hover{
     font-family: 'Bebas Neue', normal;
     border-radius: 0px 0px 24px 24px;
 }
+
+.project-dot {
+    visibility: active;
+    width: 16px;
+    height: 16px;
+    
+    border-radius: 50%;
+    background: var(--brand-gradient);
+    
+}
+
+/* .project-dot.active{
+    color: var(--blue);
+} */
