@@ -204,20 +204,34 @@ section.about {
     grid-template-columns: repeat(12, 1fr);
     gap: 20px;
     padding: 10% 120px;
+    position: relative;
 }
 
 section.about .about-photo-container {
-    position: relative;
+    position: absolute;
     display: flex;
     justify-content: space-between;
-    grid-column: 0.5/9;
+    bottom: 10%;
+    left: 5%;
+    z-index: -1;
     max-width: 566px;
-    height: 485px;
+    height: 100%;
 }
 
+section.about .small-elipse-container {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    bottom: -10%;
+    right: 0;
+    z-index: -1;
+    /* height: 100%; */
+}
+
+
 img.big-about-elipse {
-    width: 800px;
-    height: 800px;
+    /* width: 800px;
+    height: 800px; */
     /* z-index: -1; */
     position: absolute;
 }
