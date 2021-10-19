@@ -1,11 +1,3 @@
-html {
-    scroll-behavior: smooth;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-}
 :root {
     /* colors */
     --dark-brown-bg-color: #181A1B;
@@ -27,36 +19,6 @@ html {
     --brand-gradient: linear-gradient(270deg, #F3D3BD 0%, #97C8EB 100%);
 }
 
-body {
-    margin: 0;
-    min-height: 100vh;
-    background-color: var(--dark-brown-bg-color);
-    overflow-x: hidden;
-}
-
-header {
-    padding: 2em 120px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-nav {
-    width: 360px;
-    display: flex;
-    justify-content: space-between;
-}
-
-
-nav a{
-    text-decoration: none;
-    font-size: 24px;
-    color: var(--white);
-    font-family: 'Bebas Neue', cursive;
-}
-
-
-
 
 /* ======================== PROJECTS ======================== */
 
@@ -68,15 +30,14 @@ section.projects {
     padding: 10% 120px;
     background-color: var(--grey3);
     width: 1440px;
-height: 1691px;
-left: 0px;
-top: 151px;
+    height: 1691px;
+    left: 0px;
+    top: 151px;
 }
 
 .project-sections{
     grid-column: 1/3;
 }
-
 
 
 h2{
@@ -257,109 +218,4 @@ section.projects .row .project:hover{
     background: url("/images/linkedin-hover.png") no-repeat;
     width: 57px;
     height: 57px;
-}
-
-
-/* ==================== CONTACT ======================== */
-
-section.contact{
-    width: 100vw;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    gap: 20px;
-    background-color: var(--light-orange);
-    padding: 10% 120px;
-}
-
-section.contact .left{
-    grid-column: 2/5;
-}
-
-section.contact .right{
-    grid-column: 7/11;
-}
-
-section.contact p{
-    color: #181A1B;
-    font-family: 'Baloo 2', cursive;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 38px;
-    letter-spacing: 0em;
-    text-align: left;
-}
-
-section.contact h2{
-    color: #181A1B;
-}
-section.contact .link{
-    font-weight: 400;
-    font-family: 'Bebas Neue', cursive;
-    font-size: 48px;
-    grid-column: 2/9;
-    color: var(--blue);
-    text-decoration: none;
-}
-
-section.contact .link:visited {
-    color: var(--blue); 
-  }
-
-  h1.social-media-link a:link {
-    color: var(--blue);
-  }
-
-  h1.social-media-link a:hover {
-    color:var(--dark-blue);
-  }
-
-  .contact-form .right-containter {
-    grid-column: 7 / 9;
-}
-
-
-/* FOOTER */
-footer{
-    width: 100%;
-    display: grid;
-    background: #F3D3BD;
-    padding: 3% 120px;
-}
-
-footer p{
-    font-family: 'Baloo 2', cursive;
-    font-size: 1.5em;
-    font-weight: 500;
-    display: flex;
-    align-items: center;
-}
-
-
-
-/* Project hover end */
-.social-network-icons{
-    display: flex;
-    justify-content: space-between;
-    grid-column: 10/12;
-}
-
-.social-network-icons .icon-bg{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 57px;
-    height: 57px;
-    background-color: var(--light-orange);
-    border-radius: 50%;
-    
-} 
-
-.social-network-icons .icon-bg:hover .icon{
-    stroke: var(--dark-blue);
-}
-
-.social-network-icons .icon-bg:hover .solid{
-    stroke: var(--dark-blue);
-    fill: var(--dark-blue);
 }
