@@ -28,7 +28,7 @@ section.projects-page {
     grid-template-columns: repeat(12, 1fr);
     gap: 20px;
     padding: 10% 120px;
-   
+    background-color: var(--dark-brown-bg-color);
     /* height: 1691px; */
     left: 0px;
     top: 151px;
