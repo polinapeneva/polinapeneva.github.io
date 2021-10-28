@@ -74,10 +74,13 @@ nav a{
     color: var(--white);
     font-family: 'Bebas Neue', normal;
     font-weight: 400;
+    
 }
 
 nav a:hover{
    color: var(--blue);
+   transform: scale(1.2);
+  transition: all 0.3s ease-in-out 0.2s;
 }
 
 nav .item {
