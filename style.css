@@ -379,6 +379,11 @@ section.projects .row .project{
 section.projects .row .project:hover{
     -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
     filter: grayscale(0%);
+    -webkit-transform: scale(1.3);
+	transform: scale(1.3);
+
+    -webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
 }
 
 section.project .row .project{
@@ -416,7 +421,6 @@ section.projects .label img{
     border-radius: 0px 0px 24px 24px;
   }
   
-
 
 /* ==================== CONTACT ======================== */
 
