@@ -44,7 +44,15 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: var(--dark-blue-bg-color);
+    box-shadow: none;
 }
+
+.sticky {
+    position: fixed; /*must be changed*/ 
+    top: 0;
+    width: 100%;
+  }
 
 nav {
     width: 360px;
@@ -423,6 +431,8 @@ section.contact{
 
 section.contact .left{
     grid-column: 2/6;
+    display: flex;
+    flex-direction: column;
 }
 
 section.contact .left *, section.contact .right *{
