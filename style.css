@@ -1,13 +1,4 @@
-html {
-    scroll-behavior: smooth;
-}
 
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
 
 :root {
     /* colors */
@@ -28,15 +19,29 @@ html {
     --dark-blue: #7AABCE;
     --gradient-vertical2: linear-gradient(180deg, #F3D3BD 0%, #97C8EB 100%);
     --vertical-gradient: linear-gradient(0deg, #F3D3BD 0%, #97C8EB 100%);
+    --vertical-gradient-moz: moz-linear-gradient(0deg, #F3D3BD 0%, #97C8EB 100%);
     --brand-gradient: linear-gradient(270deg, #F3D3BD 0%, #97C8EB 100%);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     margin: 0;
     min-height: 100vh;
-    background-color: var(--dark-brown-bg-color);
     overflow-x: hidden;
     font-size: 12px;
+    background-color: var(--dark-brown-bg-color);
+    background-image: var(--vertical-gradient);
+    /* background-image: -moz-linear-gradient(center bottom, rgb(14,173,173) 33%, rgb(0,255,255) 67% ); */
+    padding: 12px;
 }
 
 header {
@@ -109,13 +114,15 @@ nav .item.active .dot{
 }
 
 section.hero {
-    margin-top: 6em;
-    padding: 0 120px;
+    background-color: var(--dark-brown-bg-color);
+    /* padding-top: 6em; */
+    padding: 6em 0 120px 120px;
 
     /* grid */
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 20px;
+    z-index: -2;
 }
 
 section.hero .intro {
@@ -217,11 +224,15 @@ section.hero ul.skills p {
 /* ======================== ABOUT SECTION ======================== */
 section.about {
     /* grid */
+    /* background-color: var(--dark-brown-bg-color); */
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 20px;
     padding: 10% 120px;
     position: relative;
+    /* z-index: ; */
+    background-color: var(--dark-brown-bg-color);
+
 }
 
 section.about .about-photo-container {
@@ -230,9 +241,9 @@ section.about .about-photo-container {
     justify-content: space-between;
     bottom: 10%;
     left: 5%;
-    z-index: -1;
     max-width: 566px;
     height: 100%;
+    z-index: 1;
 }
 
 section.about .small-elipse-container {
@@ -241,7 +252,7 @@ section.about .small-elipse-container {
     justify-content: space-between;
     bottom: -10%;
     right: 0;
-    z-index: -1;
+    z-index: 1;
     /* height: 100%; */
 }
 
@@ -333,10 +344,12 @@ section.about p{
 /* ======================== PROJECTS ======================== */
 section.projects {
     /* grid */
+    position: relative;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 20px;
     padding: 10% 120px;
+    z-index: 2;
     background-color: var(--grey3);
 }
 
@@ -430,7 +443,6 @@ section.projects .label img{
 /* ==================== CONTACT ======================== */
 
 section.contact{
-    width: 100vw;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 20px;
