@@ -138,11 +138,11 @@ section.hero .photo-container {
     height: 485px;
 }
 
-img.elipse, img.poli {
+img.ellipse, img.poli {
     position: absolute;
 }
 
-img.elipse {
+img.ellipse {
     width: 85%;
     z-index: 0;
 }
@@ -246,7 +246,7 @@ section.about .about-photo-container {
     z-index: 1;
 }
 
-section.about .small-elipse-container {
+section.about .small-ellipse-container {
     position: absolute;
     display: flex;
     justify-content: space-between;
@@ -257,7 +257,7 @@ section.about .small-elipse-container {
 }
 
 
-img.big-about-elipse {
+img.big-about-ellipse {
     /* width: 800px;
     height: 800px; */
     /* z-index: -1; */
